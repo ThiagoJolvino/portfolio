@@ -365,9 +365,7 @@ header {
     width: 100%;
     margin-bottom: 2rem;
 }
-.card-info button{
-    width: 8rem;
-    height: 2.5rem;
+.btn{
     background: #AA076B; 
     background: -webkit-linear-gradient(to right, #61045F, #AA076B); 
     background: linear-gradient(to right, #61045F, #AA076B); 
@@ -378,6 +376,11 @@ header {
     border: none;
     box-shadow: 0 0.1rem .8rem rgba(0, 0, 0, .4);
 }
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
+    
+}
 
 .card:hover .card-info{
     bottom: 1rem;
@@ -385,4 +388,90 @@ header {
     visibility: visible;
 }
 
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contato-wrapper{
+    width: 50%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
+}
+.contato-left{
+    width: 35%;
+    background: 
+        linear-gradient(rgba(39, 39, 39, 0.2),rgba(110, 110, 110, 0.2)),
+        url(img/darkwoodbackground.jpg);
+    background-size: cover;
+}
 
+.contato-right {
+    width: 60%;
+    background-color: #eee;
+    padding: 1rem 6rem 6rem 6rem;
+}
+.sessao-projetos{
+    margin-bottom: 3rem;
+}
+.sessao-contato{
+    font-family: var(--font-primary);
+    text-align: center;
+    color: #272727;
+    font-size: 2rem;
+    font-weight: linear;
+}
+.sessao-contato form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.input-group{
+    position: relative;
+}
+.input-group textarea{
+    padding-top: 1rem;
+    max-width: 20rem;
+    max-height: 3;
+    
+}
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.2rem;
+    font-family: var(--font-secondary);
+    border-bottom: 2px dashed #535353;
+    height: 3rem;
+    outline: none;
+    
+}
+.field-label{
+    position: absolute;
+    left: 0;
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+.field:focus ~ label{
+    top: 0;
+    font-size: 0.9rem;
+
+}
+.field:focus{
+    border-bottom: 1px solid
+}
+
+.btn-submit{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    width: 100%;
+    height: 1.5rem;
+}
