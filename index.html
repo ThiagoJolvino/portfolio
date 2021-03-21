@@ -187,19 +187,19 @@
         <section class="sessao-orcamento" id="orcamento">
             <div class="orcamento-wrapper">
                 <h1>Faça um orçamento</h1>
-                <form action="">
+                <form action="orcamento.php" method="GET">
                     <label for="qtde">Qtde de Páginas</label>
                     <input type="number" min="1" max="10" name="qtde" id="qtde" value="1">
                     <label for="">Preciso de um script JS</label>
-                    <input type="checkbox" name="js" id="js">
+                    <input type="checkbox" name="js" id="js" value="1">
                     <label>Layout</label>
                     <div class="group-layout">
                         <div>
-                            <input type="radio" name="layout" id="layout-sim">
+                            <input type="radio" name="layout" id="layout-sim" value="sim">
                             <label for="layout-sim">Preciso de um layout</label>
                         </div>
                         <div>
-                            <input type="radio" name="layout" id="layout-nao">
+                            <input type="radio" name="layout" id="layout-nao" value="nao">
                             <label for="layout-nao">Já tenho um layout</label>
                         </div>
                     </div>
