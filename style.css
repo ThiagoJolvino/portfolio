@@ -406,7 +406,7 @@ header {
 }
 .contato-area label{
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-right: 2%;
 }
 .form-text-area{
@@ -884,7 +884,7 @@ footer{
 
 }
 .contato-area label {
-        font-size: 2rem;
+        font-size: 1.5rem;
 }
 @media (max-width: 425px){
     .conhecimento-img-wrapper{
