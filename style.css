@@ -250,7 +250,7 @@ header {
     border-radius: .5rem;
 }
 .card:hover .card-img-wrapper img{
-    opacity: 0.5;
+    opacity: 0.2;
     border-radius: .5rem;
 }
 .card-info{
