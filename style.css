@@ -138,7 +138,75 @@ header {
         opacity: 1;
     }
 }
+main {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobre-mim-container{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobre-mim-titulo{
+    display: flex;
 
+    height: 20%;
+    justify-content: center;
+}
+.sobre-mim-titulo h2 {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: solid 3px #61045F;
+    margin-bottom: 1.9rem;
+}
+.sobre-mim-info-container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.sobre-mim-info{
+    width: 60%;
+    height: 100%;
+    font-family: var(--font-secondary);
+}
+.sobre-mim-info h3{
+    padding-bottom: 0.3rem;
+}
+#sm-text1{
+    padding-top: 0.3rem;
+    padding-bottom: 1rem;
+}
+#sm-text2{
+    padding-bottom: 1rem;
+}
+#sm-text3{
+    padding-bottom: 0.3rem;
+}
+.sobre-mim-foto {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+}
+.img-frame{
+    display: inline-block;
+    width: 270px;
+    height: 270px;
+}
+.img-frame img{
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B); 
+    background: linear-gradient(to right, #61045F, #AA076B); 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
 .conhecimentos {
     height: 100%;
     display: grid;
@@ -674,9 +742,35 @@ footer{
 }
     
 }
+@media (max-width: 917px){
+    main {
+        height: 120vh;
+    }
+    .sobre-mim-info-container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-mim-titulo{
+        height: 12%;
+    }
+    .sobre-mim-info{
+        width: 100%;
+    }
+    .sobre-mim-foto{
+        width: 100%;
+        height: 70%;
+    }
+    .img-frame{
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+    }
+}
+
 @media (max-width: 768px){
     html {
-        font-size: 70%;
+        font-size: 80%;
     }
     .menu-container {
         display: none;
@@ -746,6 +840,18 @@ footer{
 .show-menu .hamburguer:hover span{
     opacity: 1;
 }
+.sobre-mim-foto{
+    width: 100%;
+    height: 70%;
+}
+.img-frame {
+    width: 200px;
+    height: 200px;
+}
+.sobre-mim-container {
+    font-size: 100%;
+}
+
 .sidebar{
     display: initial;
     width: 20rem;
@@ -814,13 +920,20 @@ footer{
     object-fit: cover;
     width: 100%;
 }
+
 }
 
 @media (max-width: 558px){
     html {
-        font-size: 50%;
+        font-size: 60%;
     }
-    
+    main {
+        height: 110vh;
+    }
+    .img-frame{
+        width: 180px;
+        height: 180px;
+    }
     .projetos{
         width: 100%;
         display: flex;
@@ -870,7 +983,7 @@ footer{
         position: relative;
     }
     .footer-content p{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .social-list a{
         margin: 0 2rem;
@@ -887,6 +1000,16 @@ footer{
         font-size: 1.5rem;
 }
 @media (max-width: 425px){
+    html {
+        font-size: 50%;
+    }
+    main {
+        height: 110vh;
+    }
+    .img-frame{
+        width: 150px;
+        height: 150px;
+    }
     .conhecimento-img-wrapper{
         grid-column: 3 / 16;
         grid-row: 1 / 4 ;
@@ -958,6 +1081,9 @@ footer{
     }
 }
 @media (max-width: 375px){
+    .sobre-mim-titulo{
+        width: 70%;
+    }
     .conhecimentos h1{
         font-size: 1rem;
     }
@@ -975,4 +1101,14 @@ footer{
         background-color: #AA076B;
         
     }
+@media (max-width: 251px){
+    main{
+        height: 120vh;
+    }
+    .img-frame{
+        width: 140px;
+        height: 140px;
+    }
+}
+    
 }
