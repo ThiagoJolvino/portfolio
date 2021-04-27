@@ -139,23 +139,19 @@ header {
     }
 }
 main {
-    height: 90vh;
+    height: 70vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .sobre-mim-container{
     height: 100%;
     width: 80%;
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
 }
 .sobre-mim-titulo{
     display: flex;
-
-    height: 20%;
+    align-items: center;
     justify-content: center;
 }
 .sobre-mim-titulo h2 {
@@ -166,7 +162,8 @@ main {
     margin-bottom: 1.9rem;
 }
 .sobre-mim-info-container{
-    width: 100%;
+    margin: 0 auto;
+    width: 70%;
     height: 80%;
     display: flex;
 }
@@ -552,18 +549,25 @@ textarea {
 .sessao-orcamento{
     width: 100%;
     height: 100vh;
-    background: url("./img/orcamentocode.jpg");
     object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.sessao-orcamento img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: contrast(20%);
+    filter: brightness(50%);
+    object-fit: cover;
 }
 .orcamento-wrapper{
     width: 60%;
     height: 80%;
     background-color: #ffffff99;
     border-radius: 10px;
-    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.7);
     position: relative;
 }
 .orcamento-wrapper h1{
@@ -593,6 +597,7 @@ textarea {
     font-family: var(--font-secondary);
     font-size: 1.5rem;
     font-weight: bold;
+    color: black;
 }
 
 .btn-orcamento {
@@ -744,7 +749,7 @@ footer{
 }
 @media (max-width: 917px){
     main {
-        height: 120vh;
+        height: 80vh;
     }
     .sobre-mim-info-container{
         flex-direction: column-reverse;
@@ -759,7 +764,7 @@ footer{
     }
     .sobre-mim-foto{
         width: 100%;
-        height: 70%;
+        height: 60%;
     }
     .img-frame{
         display: inline-block;
@@ -842,7 +847,7 @@ footer{
 }
 .sobre-mim-foto{
     width: 100%;
-    height: 70%;
+    height: 55%;
 }
 .img-frame {
     width: 200px;
@@ -921,6 +926,10 @@ footer{
     width: 100%;
 }
 
+.orcamento-wrapper{
+    height: 70%;
+}
+
 }
 
 @media (max-width: 558px){
@@ -928,7 +937,7 @@ footer{
         font-size: 60%;
     }
     main {
-        height: 110vh;
+        height: 70vh;
     }
     .img-frame{
         width: 180px;
@@ -1004,7 +1013,7 @@ footer{
         font-size: 50%;
     }
     main {
-        height: 110vh;
+        height: 70vh;
     }
     .img-frame{
         width: 150px;
